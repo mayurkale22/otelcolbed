@@ -36,7 +36,7 @@ import (
 func main() {
 	handleErr := func(err error) {
 		if err != nil {
-			log.Fatalf("Failed to run the service: %v", err)
+			log.Fatalf("Failed to run the collector: %v", err)
 		}
 	}
 
@@ -56,8 +56,8 @@ func main() {
 	handleErr(err)
 
 	processors, err := processor.Build(
+                &batchprocessor.Factory{},
 		&queuedprocessor.Factory{},
-		&batchprocessor.Factory{},
 	)
 	handleErr(err)
 
