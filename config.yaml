@@ -1,0 +1,22 @@
+receivers:
+  opencensus:
+    endpoint: 0.0.0.0:55678
+
+exporters:
+  stackdriver:
+    project: "opencenus-node"
+
+processors:
+  queued_retry:
+
+extensions:
+  pprof:
+    endpoint: :1888
+
+service:
+  extensions: [pprof]
+  pipelines:
+    traces:
+      receivers: [opencensus]
+      exporters: [stackdriver]
+      processors: [queued_retry]
