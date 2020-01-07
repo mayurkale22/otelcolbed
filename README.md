@@ -27,7 +27,12 @@ $ docker run -p 55678:55678 otelcollector --config=./config.yaml
 or
 
 ```
-$ docker run --rm --interactive --tty --publish 55678:55678 --publish 55679:55679 --volume $(pwd)/config.yaml:/conf/config.yaml otelcollector --config=/conf/config.yaml
+$ docker run /
+         --rm --interactive /
+         --tty --publish 55678:55678 /
+         --publish 55679:55679 /
+         --volume $(pwd)/config.yaml:/conf/config.yaml /
+         otelcollector --config=/conf/config.yaml
 ```
 
 
