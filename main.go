@@ -4,17 +4,17 @@ import (
 	"log"
 	
 	"github.com/open-telemetry/opentelemetry-collector/config"
-  "github.com/open-telemetry/opentelemetry-collector/exporter"
-  "github.com/open-telemetry/opentelemetry-collector/extension"
-  "github.com/open-telemetry/opentelemetry-collector/internal/version"
-  "github.com/open-telemetry/opentelemetry-collector/processor"
-  "github.com/open-telemetry/opentelemetry-collector/receiver"
-  "github.com/open-telemetry/opentelemetry-collector/service"
+  	"github.com/open-telemetry/opentelemetry-collector/exporter"
+  	"github.com/open-telemetry/opentelemetry-collector/extension"
+  	"github.com/open-telemetry/opentelemetry-collector/internal/version"
+  	"github.com/open-telemetry/opentelemetry-collector/processor"
+  	"github.com/open-telemetry/opentelemetry-collector/receiver"
+  	"github.com/open-telemetry/opentelemetry-collector/service"
  	"github.com/open-telemetry/opentelemetry-collector/receiver/opencensusreceiver"
  	"github.com/open-telemetry/opentelemetry-collector/extension/pprofextension"
-  "github.com/open-telemetry/opentelemetry-collector/processor/queuedprocessor"
-  "github.com/open-telemetry/opentelemetry-collector/processor/batchprocessor"
-  "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/stackdriverexporter"
+  	"github.com/open-telemetry/opentelemetry-collector/processor/queuedprocessor"
+  	"github.com/open-telemetry/opentelemetry-collector/processor/batchprocessor"
+  	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/stackdriverexporter"
 )
 
 func main() {
