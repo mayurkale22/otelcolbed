@@ -3,12 +3,12 @@
 Build the Agent and start it with the config:
 
 ```
-go build
+$ go build
 
-./otelcolbed --config=./config.yaml
+$ ./otelcolbed --config=./config.yaml
 ```
  
-By default, the Collector has the `OpenCensus` receiver enabled and `stackdriver` exporter.
+By default, the Collector has the `OpenCensus` receiver and `stackdriver` exporter enabled.
 
 
 
