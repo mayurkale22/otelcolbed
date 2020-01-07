@@ -66,36 +66,3 @@ func main() {
 	handleErr(err)
 }
 
-// package main
-
-// import (
-// 	"log"
-
-// 	"github.com/open-telemetry/opentelemetry-collector/defaults"
-// 	"github.com/open-telemetry/opentelemetry-collector/internal/version"
-// 	"github.com/open-telemetry/opentelemetry-collector/service"
-// )
-
-// func main() {
-// 	handleErr := func(err error) {
-// 		if err != nil {
-// 			log.Fatalf("Failed to run the service: %v", err)
-// 		}
-// 	}
-
-// 	factories, err := defaults.Components()
-// 	handleErr(err)
-
-// 	info := service.ApplicationStartInfo{
-// 		ExeName:  "otelcol",
-// 		LongName: "OpenTelemetry Collector",
-// 		Version:  version.Version,
-// 		GitHash:  version.GitHash,
-// 	}
-
-// 	svc, err := service.New(factories, info)
-// 	handleErr(err)
-
-// 	err = svc.Start()
-// 	handleErr(err)
-// }
