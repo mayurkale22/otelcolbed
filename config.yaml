@@ -7,6 +7,7 @@ exporters:
     project: "opencenus-node"
 
 processors:
+  batch:
   queued_retry:
 
 extensions:
@@ -19,4 +20,4 @@ service:
     traces:
       receivers: [opencensus]
       exporters: [stackdriver]
-      processors: [queued_retry]
+      processors: [batch, queued_retry]
