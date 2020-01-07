@@ -21,3 +21,6 @@ service:
       receivers: [opencensus]
       exporters: [stackdriver]
       processors: [batch, queued_retry]
+    metrics:
+      receivers: [opencensus]
+      exporters: [stackdriver]
